@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.udahoron.arnob.mycleancity.MainActivity"
+    android:background="@drawable/main_header_selector">
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/smart_city_image"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/button_background_style_main">
+
+            <Button
+                android:id="@+id/complain_id"
+                style="@style/button_style_main"
+                android:drawableTop="@drawable/complain_icon"
+                android:text="complain" />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/button_background_style_main">
+
+            <Button
+                android:id="@+id/serach_id"
+                style="@style/button_style_main"
+                android:drawableTop="@drawable/find_icon"
+                android:text="search" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/button_background_style_main">
+
+            <Button
+                android:id="@+id/request_id"
+                style="@style/button_style_main"
+                android:drawableTop="@drawable/request_icon"
+                android:text="request" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".75"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/button_background_style_main">
+
+            <Button
+                android:id="@+id/events_id"
+                style="@style/button_style_main"
+                android:drawableTop="@drawable/events_icon"
+                android:text="events" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/button_background_style_main">
+
+            <Button
+                android:id="@+id/tips_id"
+                style="@style/button_style_main"
+                android:drawableTop="@drawable/help_icon"
+                android:text="help-tips" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
